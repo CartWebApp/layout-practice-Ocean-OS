@@ -6,18 +6,18 @@ body {
     nav {
         display: flex;
         padding: 0.5em;
-        background: #345;
+        background: #445;
         justify-content: center;
         margin: 0;
         & a {
             padding: 0.6em 0.8em;
-            border: 1px solid #ddd;
+            border: 0.005rem solid #aaa;
             margin: 0em 1em;
             color: white;
             text-decoration: none;
             transition: backdrop-filter 0.2s ease;
-            &:hover {
-                backdrop-filter: brightness(130%);
+            &:is(:hover, :first-child) {
+                backdrop-filter: brightness(150%);
             }
         }
     }
@@ -57,7 +57,6 @@ section.hero {
 }
 
 section.headlines {
-    /* margin: 0 10em; */
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -66,7 +65,6 @@ section.headlines {
     & article {
         background: url(../assets/img1.jpg) #eee center/cover no-repeat;
         background-position: 0% 0%;
-        /* max-width: 20%; */
         background-size: 100% 50%;
         padding-top: 3vh;
         padding-left: 1vw;
@@ -126,7 +124,6 @@ section.headlines {
 section.twocolumn {
     display: flex;
     justify-content: space-around;
-    /* margin: 1em; */
     gap: 2vw;
     & article {
         background: url(../assets/img4.jpg) #eee center/cover no-repeat;
